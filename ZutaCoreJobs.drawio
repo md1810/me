@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-05-05T13:50:51.059Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.41 Safari/537.36" etag="xz6FbBY8dBJ2KQgy5ykD" version="18.0.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-05-05T14:15:11.437Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.41 Safari/537.36" etag="rzlhGWITBAB_1rvSaV2x" version="18.0.0" type="github">
   <diagram id="aG1t9R-15McpjbNqm39I" name="Page-1">
     <mxGraphModel dx="1350" dy="736" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -19,8 +19,8 @@
         <mxCell id="RkaA5Hggt3micQ5uDcpL-6" value="&lt;b&gt;ZutaDev-Pipeline Job&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
           <mxGeometry x="55" y="255" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="RkaA5Hggt3micQ5uDcpL-7" value="&lt;ul&gt;&lt;li&gt;In this Job, we are build a java project using maven.&lt;/li&gt;&lt;li&gt;Build a Docker image.&lt;/li&gt;&lt;li&gt;Running an automation test.&amp;nbsp;&lt;/li&gt;&lt;li&gt;Running an Docker image of application on slave classic_sdc.&lt;/li&gt;&lt;li&gt;Testing a site.&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="260" y="225" width="610" height="90" as="geometry" />
+        <mxCell id="RkaA5Hggt3micQ5uDcpL-7" value="&lt;ul&gt;&lt;li&gt;In this Job, we are build a java project using maven.&lt;/li&gt;&lt;li&gt;Scan the java-maven project for vulnerable dependencies and generate a report.&lt;/li&gt;&lt;li&gt;Build a Docker image.&lt;/li&gt;&lt;li&gt;Running an automation test.&amp;nbsp;&lt;/li&gt;&lt;li&gt;Running an Docker image of application on slave classic_sdc.&lt;/li&gt;&lt;li&gt;Testing a site.&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="260" y="212.5" width="610" height="115" as="geometry" />
         </mxCell>
         <mxCell id="RkaA5Hggt3micQ5uDcpL-8" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fontSize=14;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="RkaA5Hggt3micQ5uDcpL-1" target="RkaA5Hggt3micQ5uDcpL-5">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -40,7 +40,7 @@
         <mxCell id="RkaA5Hggt3micQ5uDcpL-13" value="" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
           <mxGeometry x="20" y="555" width="230" height="65" as="geometry" />
         </mxCell>
-        <mxCell id="RkaA5Hggt3micQ5uDcpL-14" value="&lt;ul&gt;&lt;li&gt;In this Job, we are taking user&amp;nbsp;input as a build number.&lt;/li&gt;&lt;li&gt;copy production package based on input from /var/lib/jenkins/workspace/upload-package-drive directory to /var/lib/jenkins/workspace/deploy-package-to-production.&lt;/li&gt;&lt;li&gt;From /var/lib/jenkins/workspace/deploy-package-to-production we will upload the package to SDC Directory on Google Drive to be ready for user downloads.&lt;br&gt;&lt;/li&gt;&lt;li&gt;Manual Trigger&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+        <mxCell id="RkaA5Hggt3micQ5uDcpL-14" value="&lt;ul&gt;&lt;li&gt;In this Job, we are taking user&amp;nbsp;input as a build number.&lt;/li&gt;&lt;li&gt;copy production package based on input from /var/lib/jenkins/workspace/upload-package-drive directory to /var/lib/jenkins/workspace/deploy-package-to-production.&lt;/li&gt;&lt;li&gt;From /var/lib/jenkins/workspace/deploy-package-to-production we will update the package to SDC Directory on Google Drive to be ready for user downloads.&lt;br&gt;&lt;/li&gt;&lt;li&gt;Manual Trigger&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
           <mxGeometry x="260" y="520" width="580" height="140" as="geometry" />
         </mxCell>
         <mxCell id="RkaA5Hggt3micQ5uDcpL-15" value="&lt;b&gt;deploy-package-to-production Job&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
